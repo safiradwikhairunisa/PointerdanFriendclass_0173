@@ -15,9 +15,12 @@ int nim(){
     mhs.nim = 5;
     mhs.showNim(); //member akses 
 
-    Mahasiswa &refMhs = mhs; //pointer
+    Mahasiswa &refMhs = mhs; //pointer reference
     refMhs.nim = 2; //member akses
     mhs.showNim();
 
-    
+    Mahasiswa *pMhs = &mhs; //pointer dereference
+    pMhs->nim = 3; //arrow operator
+    pMhs->showNim();
+    return 0;
 }
