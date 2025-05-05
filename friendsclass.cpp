@@ -31,11 +31,14 @@ int main(){
     int b = 3;
     int *c = &a;
     *c = 9;
+    cout << endl;
+    cout << a << endl;
+    
     cout << "Alamat memori a = " << &a << endl;
     cout << "Alamat memeori c = " << c << endl;
     cout << "cetak c = " << *c << endl;
     c = &b;
     cout << "Alamat memori c = " << c << endl;
     cout << "cetak c = " << *c << endl;
-    
+
 }
