@@ -26,4 +26,9 @@ int main(){
     pds->nama = "Reza";
     cout << "Alamat memori = " << pds << endl;
     pds->tampilNama();
+
+    int a = 5;
+    int b = 3;
+    int *c = &a;
+    *c = 9;
 }
