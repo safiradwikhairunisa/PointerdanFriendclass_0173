@@ -11,7 +11,13 @@ class Mahasiswa{
 
 int nim(){
 
-    mahasiswa mhs; //objek mhs
+    Mahasiswa mhs; //objek mhs
     mhs.nim = 5;
     mhs.showNim(); //member akses 
+
+    Mahasiswa &refMhs = mhs; //pointer
+    refMhs.nim = 2; //member akses
+    mhs.showNim();
+
+    
 }
